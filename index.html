@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VisionNest</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+  <main>
+    <section class="text-center py-10 bg-yellow-400 text-black">
+      <h1 class="text-4xl font-bold mb-4">Welcome to VisionNest</h1>
+      <p class="text-xl">Revolutionizing Interior Design with VR & Smart Solutions</p>
+    </section>
+
+    <section class="grid md:grid-cols-3 gap-6 p-6">
+      <div class="bg-gray-900 text-white rounded-2xl shadow-xl p-6">
+        <h2 class="text-2xl font-semibold text-yellow-400">3D from 2D + VR Tours</h2>
+        <p class="mt-2">We convert your 2D floor plans into realistic 3D interiors and let you explore them in virtual reality.</p>
+        <img
+          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+          alt="3D Interior Example"
+          class="mt-4 rounded-xl shadow-lg"
+        />
+      </div>
+
+      <div class="bg-gray-900 text-white rounded-2xl shadow-xl p-6">
+        <h2 class="text-2xl font-semibold text-yellow-400">Labour Marketplace</h2>
+        <p class="mt-2">Find skilled professionals like carpenters, masons, painters, polishers, and tile layers at your fingertips.</p>
+        <img
+          src="https://images.unsplash.com/photo-1581092160620-1c722be25af7"
+          alt="Marketplace Example"
+          class="mt-4 rounded-xl shadow-lg"
+        />
+      </div>
+
+      <div class="bg-gray-900 text-white rounded-2xl shadow-xl p-6">
+        <h2 class="text-2xl font-semibold text-yellow-400">Smart To-let Boards</h2>
+        <p class="mt-2">Our QR-enabled boards link to static pages with all the property details for potential renters.</p>
+        <img
+          src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914"
+          alt="To-let Board Example"
+          class="mt-4 rounded-xl shadow-lg"
+        />
+      </div>
+    </section>
+
+    <section class="text-center py-10">
+      <div class="transition-opacity duration-1000 opacity-100">
+        <h2 class="text-3xl font-bold text-yellow-400">Get Started With Us</h2>
+        <p class="mt-2">Design your dream space, visualize it in VR, connect with workers, and list rentals smartly!</p>
+        <button
+          class="mt-6 bg-yellow-400 text-black px-6 py-2 rounded-full font-bold hover:bg-yellow-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50"
+          aria-label="Contact Us Button"
+        >
+          Contact Us
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center text-sm text-gray-400 py-4 border-t border-gray-700">
+    &copy; <span id="year"></span> VisionNest. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
